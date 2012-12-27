@@ -1,0 +1,25 @@
+{
+    "name": "kane/markdown",
+    "keywords": ["markdown", "html"],
+		"description": "PHP Markdown Extra variation - cleanups, fixed and different line break behaviour",
+		"license": "MIT",
+    "authors": [
+        {
+            "name": "Kane Cohen",
+            "email": "kanecohen@gmail.com",
+						"role": "package Developer"
+        },
+        {
+            "name": "Michel Fortin",
+            "email": "http://michelf.com/",
+						"role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Markdown": "src/"
+        }
+    },
+		"minimum-stability": "dev"
+}
+
