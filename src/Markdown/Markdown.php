@@ -464,7 +464,8 @@ class Markdown {
 
 		'doItalicsAndBold'    =>  50,
 		'doStrikesAndSpoilers'=>  60,
-		'doHardBreaks'        =>  70,
+		'doSup'               =>  70,
+		'doHardBreaks'        =>  80,
 	);
 
 
@@ -480,17 +481,28 @@ class Markdown {
 		return $text;
 	}
 	
+	public function doSup($text)
+	{
+		# Do hard breaks:
+		return preg_replace_callback('/\S\^(\S+)/', 
+			array(&$this, 'doSupCallback'), $text);
+	}
+
+	private function doSupCallback($matches)
+	{
+		return $this->hashPart("<sup>$matches[1]</sup>");
+	}
 	
 	public function doHardBreaks($text)
 	{
 		# Do hard breaks:
-		return preg_replace_callback('/( {2,}\n|\n{1})/', 
+		return preg_replace_callback('/(\s{2,}\n|\n{1})/', 
 			array(&$this, 'doHardBreaksCallback'), $text);
 	}
 
 	private function doHardBreaksCallback($matches)
 	{
-		return $this->hashPart("<br$this->emptyElementSuffix\n");
+		return $this->hashPart("<br$this->emptyElementSuffix");
 	}
 
 
