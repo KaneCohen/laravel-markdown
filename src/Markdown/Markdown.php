@@ -30,7 +30,7 @@ class Markdown {
 	protected $nestedUrlParenthesisRe;
 
 	# Table of hash values for escaped characters:
-	protected $escapeChars = '\`*_{}[]()>#+-.!';
+	protected $escapeChars = '\`*_{}[]()>#+-~.!';
 	protected $escapeCharsRe;
 
 	# Change to ">" for HTML output.
