@@ -745,7 +745,7 @@ class Markdown {
 		#	###### Header 6
 		#
 		$text = preg_replace_callback('{
-				^(\#{1,6})	# $1 = string of #\'s
+				^(\#{1,6})\s	# $1 = string of #\'s
 				[ ]*
 				(.+?)		# $2 = Header text
 				[ ]*
