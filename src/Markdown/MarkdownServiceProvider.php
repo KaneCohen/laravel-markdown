@@ -34,4 +34,3 @@ class MarkdownServiceProvider extends ServiceProvider
     return array('markdown');
   }
 }
-

@@ -1,13 +1,13 @@
 {
-    "name": "kanecohen/markdown",
+    "name": "cohensive/markdown",
     "keywords": ["markdown", "html"],
-		"description": "PHP Markdown Extra variation - cleanups, fixed and different line break behaviour",
+		"description": "PHP Markdown Extra variation - cleanups, fixes and different line break behaviour",
 		"license": "MIT",
     "authors": [
         {
             "name": "Kane Cohen",
             "email": "kanecohen@gmail.com",
-						"role": "package Developer"
+						"role": "Package Developer"
         },
         {
             "name": "Michel Fortin",
@@ -22,4 +22,3 @@
     },
 		"minimum-stability": "dev"
 }
-
