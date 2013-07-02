@@ -1,7 +1,8 @@
 <?php
-namespace Markdown;
+namespace Cohensive\Markdown;
 
-class Markdown {
+class Markdown
+{
 
 	# Regex to match balanced [brackets].
 	# Needed to insert a maximum bracked depth while converting to PHP.
@@ -182,7 +183,8 @@ class Markdown {
 	}
 
 
-	function hashHTMLBlocks($text) {
+	function hashHTMLBlocks($text)
+	{
 		if ($this->noMarkup) return $text;
 
 		$lessThanTab = $this->tabWidth - 1;

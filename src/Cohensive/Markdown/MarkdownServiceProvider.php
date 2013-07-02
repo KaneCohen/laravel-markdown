@@ -1,5 +1,5 @@
 <?php
-namespace Markdown;
+namespace Cohensive\Markdown;
 
 use Illuminate\Support\ServiceProvider;
 

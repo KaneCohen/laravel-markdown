@@ -1,24 +1,24 @@
 {
-    "name": "cohensive/markdown",
-    "keywords": ["markdown", "html"],
-		"description": "PHP Markdown Extra variation - cleanups, fixes and different line break behaviour",
-		"license": "MIT",
-    "authors": [
-        {
-            "name": "Kane Cohen",
-            "email": "kanecohen@gmail.com",
-						"role": "Package Developer"
-        },
-        {
-            "name": "Michel Fortin",
-            "email": "http://michelf.com/",
-						"role": "Developer"
-        }
-    ],
-    "autoload": {
-        "psr-0": {
-            "Markdown": "src/"
-        }
-    },
-		"minimum-stability": "dev"
+	"name": "cohensive/markdown",
+	"keywords": ["markdown", "html"],
+	"description": "PHP Markdown Extra variation - cleanups, fixes and different line break behaviour",
+	"license": "MIT",
+	"authors": [
+		{
+		"name": "Kane Cohen",
+		"email": "kanecohen@gmail.com",
+		"role": "Package Developer"
+		},
+		{
+		"name": "Michel Fortin",
+		"email": "http://michelf.com/",
+		"role": "Developer"
+		}
+	],
+	"autoload": {
+		"psr-0": {
+			"Cohensive\\Markdown": "src/"
+		}
+	},
+	"minimum-stability": "dev"
 }

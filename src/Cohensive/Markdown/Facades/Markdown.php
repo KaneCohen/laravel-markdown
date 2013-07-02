@@ -1,5 +1,5 @@
 <?php
-namespace Markdown\Facades;
+namespace Cohensive\Markdown\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -12,4 +12,3 @@ class Markdown extends Facade
    */
 	protected static function getFacadeAccessor() { return 'markdown'; }
 }
-

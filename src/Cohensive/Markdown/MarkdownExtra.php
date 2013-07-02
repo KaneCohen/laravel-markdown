@@ -1,7 +1,8 @@
 <?php
-namespace Markdown;
+namespace Cohensive\Markdown;
 
-class MarkdownExtra extends Markdown {
+class MarkdownExtra extends Markdown
+{
 
 	# Prefix for footnote ids.
 	public $fnIdPrefix = "";
