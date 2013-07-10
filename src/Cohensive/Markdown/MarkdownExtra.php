@@ -18,6 +18,7 @@ class MarkdownExtra extends Markdown
 	# Predefined abbreviations.
 	public $predefAbbr = array();
 
+	public $noMarkup = true;
 
 	public function __construct()
 	{
