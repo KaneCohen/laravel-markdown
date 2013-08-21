@@ -448,7 +448,6 @@ class Markdown
 
 		'doItalicsAndBold'    =>  50,
 		'doStrikesAndSpoilers'=>  60,
-		'doSup'               =>  70,
 		'doHardBreaks'        =>  80,
 	);
 
@@ -463,18 +462,6 @@ class Markdown
 		}
 
 		return $text;
-	}
-
-	public function doSup($text)
-	{
-		# Do hard breaks:
-		return preg_replace_callback('/\S\^(\S+)/',
-			array(&$this, 'doSupCallback'), $text);
-	}
-
-	private function doSupCallback($matches)
-	{
-		return $this->hashPart("<sup>$matches[1]</sup>");
 	}
 
 	public function doHardBreaks($text)
