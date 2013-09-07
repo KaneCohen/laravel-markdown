@@ -9,21 +9,21 @@ class Factory
 	/**
 	 * Current configuration.
 	 *
-	 * @var Illuminate\Config\FileLoader
+	 * @var \Illuminate\Config\FileLoader
 	 */
 	protected $config;
 
 	/**
 	 * Markdown instance.
 	 *
-	 * Cohensive\Markdown\Markdown
+	 * \Cohensive\Markdown\Markdown
 	 */
 	protected $instance;
 
 	/**
 	 * Create Markdown Factory.
 	 *
-	 * @param  Illuminate\Foundation\Application  $app
+	 * @param  \Illuminate\Foundation\Application  $app
 	 * @return void
 	 */
 	public function __construct(Application $app)
@@ -34,7 +34,7 @@ class Factory
 	/**
 	 * Create Markdown instance.
 	 *
-	 * @return Cohensive\Markdown\Markdown
+	 * @return \Cohensive\Markdown\Markdown
 	 */
 	public function make($extra = null)
 	{
@@ -56,8 +56,8 @@ class Factory
 	/**
 	 * Apply application configs to Markdown instance.
 	 *
-	 * @param Cohensive\Markdown\Markdown  $markdown
-	 * @return Cohensive\Markdown\Markdown
+	 * @param \Cohensive\Markdown\Markdown  $markdown
+	 * @return \Cohensive\Markdown\Markdown
 	 */
 	public function applyConfig($markdown)
 	{
@@ -68,9 +68,9 @@ class Factory
 	}
 
 	/**
-	 * Get default Markdow instance for basic usage with facade..
+	 * Get default Markdown instance for basic usage with facade..
 	 *
-	 * @return Cohensive\Markdown\Markdown
+	 * @return \Cohensive\Markdown\Markdown
 	 */
 	public function getInstance()
 	{
@@ -82,7 +82,7 @@ class Factory
 	}
 
 	/**
-	 * Dynamically pass methods to the markdown.
+	 * Dynamically pass methods to the Markdown instance.
 	 *
 	 * @param  string  $method
 	 * @param  array   $parameters
