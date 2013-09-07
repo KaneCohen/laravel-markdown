@@ -5,12 +5,17 @@ use Illuminate\Support\ServiceProvider;
 
 class MarkdownServiceProvider extends ServiceProvider
 {
-  /**
-   * Indicates if loading of the provider is deferred.
+	/*
+	 * Bootstrap application events
    *
-   * @var bool
-   */
-  protected $defer = true;
+   * @return void
+	 */
+	public function boot()
+	{
+    $this->package('cohensive/markdown');
+    // Register the package configuration with the loader.
+    $this->app['config']->package('cohensive/markdown', __DIR__.'/../config');
+	}
 
   /**
    * Register the service provider.
@@ -20,7 +25,7 @@ class MarkdownServiceProvider extends ServiceProvider
   public function register()
   {
 		$this->app['markdown'] = $this->app->share(function($app) {
-			return new MarkdownExtra();
+			return new Factory($app);
 		});
   }
 

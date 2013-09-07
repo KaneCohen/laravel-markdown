@@ -19,6 +19,7 @@ class MarkdownExtra extends Markdown
 	public $predefAbbr = array();
 
 	public $noMarkup = true;
+	public $noEntities = false;
 
 	public function __construct()
 	{
