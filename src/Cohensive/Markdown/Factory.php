@@ -3,7 +3,8 @@ namespace Cohensive\Markdown;
 
 use Illuminate\Foundation\Application;
 
-class Factory {
+class Factory
+{
 
 	/**
 	 * Current configuration.
@@ -66,6 +67,11 @@ class Factory {
 		return $markdown;
 	}
 
+	/**
+	 * Get default Markdow instance for basic usage with facade..
+	 *
+	 * @return Cohensive\Markdown\Markdown
+	 */
 	public function getInstance()
 	{
 		if (is_null($this->instance)) {
