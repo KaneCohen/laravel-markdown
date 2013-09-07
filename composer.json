@@ -5,14 +5,14 @@
 	"license": "BSD-3-Clause",
 	"authors": [
 		{
-		"name": "Kane Cohen",
-		"email": "kanecohen@gmail.com",
-		"role": "Package Developer"
+			"name": "Kane Cohen",
+			"email": "kanecohen@gmail.com",
+			"role": "Package Developer"
 		},
 		{
-		"name": "Michel Fortin",
-		"email": "http://michelf.com/",
-		"role": "Developer"
+			"name": "Michel Fortin",
+			"email": "http://michelf.com/",
+			"role": "markdown Developer"
 		}
 	],
 	"autoload": {
