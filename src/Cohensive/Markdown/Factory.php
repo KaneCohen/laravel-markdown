@@ -16,7 +16,7 @@ class Factory
 	/**
 	 * Markdown instance.
 	 *
-	 * \Cohensive\Markdown\Markdown
+	 * Cohensive\Markdown\Markdown
 	 */
 	protected $instance;
 

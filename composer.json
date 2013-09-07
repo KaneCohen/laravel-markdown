@@ -1,8 +1,8 @@
 {
 	"name": "cohensive/markdown",
-	"keywords": ["markdown", "html"],
-	"description": "PHP Markdown Extra variation - cleanups, fixes and different line break behaviour",
-	"license": "MIT",
+	"description": "PHP Markdown variant for Laravel 4.",
+	"keywords": ["laravel", "markdown", "html"],
+	"license": "BSD-3-Clause",
 	"authors": [
 		{
 		"name": "Kane Cohen",

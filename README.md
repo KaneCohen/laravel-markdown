@@ -1,5 +1,8 @@
 # Markdown Extra for Laravel 4
 
+This is not a stock Markdown version. It contains various fixes, additions and
+has a different behaviour of line breaks (one line break will result in `<br/>` tag).
+
 ## Installation
 
 Add following require to your `composer.json` file:
