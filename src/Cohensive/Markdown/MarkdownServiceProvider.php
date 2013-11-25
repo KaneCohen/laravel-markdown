@@ -5,15 +5,6 @@ use Illuminate\Support\ServiceProvider;
 
 class MarkdownServiceProvider extends ServiceProvider
 {
-	/*
-	 * Bootstrap application events
-   *
-   * @return void
-	 */
-	public function boot()
-	{
-	}
-
   /**
    * Register the service provider.
    *
