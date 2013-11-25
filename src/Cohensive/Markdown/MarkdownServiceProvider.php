@@ -12,9 +12,6 @@ class MarkdownServiceProvider extends ServiceProvider
 	 */
 	public function boot()
 	{
-    $this->package('cohensive/markdown');
-    // Register the package configuration with the loader.
-    $this->app['config']->package('cohensive/markdown', __DIR__.'/../config');
 	}
 
   /**
@@ -24,6 +21,7 @@ class MarkdownServiceProvider extends ServiceProvider
    */
   public function register()
   {
+    $this->package('cohensive/markdown');
 		$this->app['markdown'] = $this->app->share(function($app) {
 			return new Factory($app);
 		});
