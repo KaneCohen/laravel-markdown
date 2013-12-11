@@ -1,5 +1,4 @@
-<?php
-namespace Cohensive\Markdown;
+<?php namespace Cohensive\Markdown;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -20,7 +19,7 @@ class MarkdownServiceProvider extends ServiceProvider
   public function register()
   {
     $this->package('cohensive/markdown');
-		$this->app['markdown'] = $this->app->share(function($app) {
+		$this->app->bindShared('markdown', function($app) {
 			return new Factory($app);
 		});
   }
