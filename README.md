@@ -8,7 +8,10 @@ has a different behaviour of line breaks (one line break will result in `<br/>` 
 Add following require to your `composer.json` file:
 
 ~~~
-    "cohensive/markdown": "dev-master"
+	// For Laravel 4.1.x+
+	"cohensive/markdown": "dev-master"
+	// OR for Laravel 4.0.x
+	"cohensive/markdown": "4.0.0"
 ~~~
 
 Then run `composer install` or `composer update` to download it and autoload.
