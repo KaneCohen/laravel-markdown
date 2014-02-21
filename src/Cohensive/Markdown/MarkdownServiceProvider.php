@@ -19,9 +19,10 @@ class MarkdownServiceProvider extends ServiceProvider
   public function register()
   {
     $this->package('cohensive/markdown');
-		$this->app->bindShared('markdown', function($app) {
-			return new Factory($app);
-		});
+    
+    $this->app->bind('markdown', function($app) {
+      return new Factory($app);
+    });
   }
 
   /**
