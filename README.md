@@ -1,7 +1,13 @@
 # Markdown Extra for Laravel 4
 
-This is not a stock Markdown version. It contains various fixes, additions and
-has a different behaviour of line breaks (one line break will result in `<br/>` tag).
+This is not a canonical Markdown version. This variant contains several differences:
+
+1. One line break will result in a `<br />` tag - just like in Github's Markdow.
+2. Underscores (\_) in the middle of the word won't add italics or bold stylings.
+3. Grave character (~ also known as tilde) will result in `<s>` tag usually used
+to add line-through or strike-through styling.
+4. Double grave character will result in `<del>` tag wrapping. Could be treated
+as spoiler tag.
 
 ## Installation
 
